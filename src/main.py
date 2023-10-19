@@ -12,7 +12,7 @@ def main(args):
 
     prompt = "Never gonna give you up, never gonna let you down, never gonna run around and"
 
-    inputs = tokenizer([prompt], return_tensors='pt', padding=True)
+    inputs = tokenizer([prompt], return_tensors='pt')
     output_ids = model.generate(**inputs)
     response = tokenizer.decode(output_ids[0])
     print(response)
