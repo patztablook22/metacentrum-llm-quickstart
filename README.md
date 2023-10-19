@@ -1,12 +1,13 @@
 # A quickstart LLM project for Metacentrum
 
-Minimal project structure to get LLMs runnign on Metacentrum.
+Minimal project structure to get LLMs running on Metacentrum.
 
 ## Usage
-1. clone the repository in any Metacentrum frontend
-2. change the `PROJECT` variable in `pbs/batch` **!!!**
-3. modify the source under `src`
-4. `qsub` the `pbs/batch` file manually or automatically using `bin/run-batch`
+1. Clone the repository in any Metacentrum frontend.
+2. Change the `PROJECT` variable in `pbs/batch` **!!!**
+3. Modify the source under `src`.
+4. Submit the job using `bin/run-batch` (or manually using `qsub pbs/batch` with adequate parameters).
+5. Configure the resources requested by modifying `bin/run-batch`. E.g. you may need to increase `gpu_mem`.
 
 ## Notes
 - `requirements.txt` contains the necessary dependencies to run Huggingface models with accelerated Torch (in my experience, Tensorflow is incomparably more painful to work with). You will probably need more things (`sklearn`, ...), feel free to add them here.
