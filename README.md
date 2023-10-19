@@ -12,3 +12,10 @@ Minimal project structure to get LLMs runnign on Metacentrum.
 - `requirements.txt` contains the necessary dependencies to run Huggingface models with accelerated Torch (in my experience, Tensorflow is incomparably more painful to work with). You will probably need more things (`sklearn`, ...), feel free to add them here.
 - Do not change the PBS modules included in `pbs/batch` unless you want to experience existential dread.
 - Metacentrum often has technical errors which are not your fault. First [check](https://docs.e-infra.cz/compute/grid/) you are not doing something stupid, then contact the [support](mailto:meta@cesnet.cz). They are quick to respond, don't worry.
+
+## Example src
+
+The example `src/main.py` uses GPT2 to rickroll you (prompt in italics):
+
+> _Never gonna give you up, never gonna let you down, never gonna run around and_ \
+> **desert you.**
