@@ -1,6 +1,6 @@
 # A quickstart LLM project for Metacentrum
 
-Minimal project structure to get LLMs running on Metacentrum.
+Minimal project structure to get LLMs running on Metacentrum primarily created for [NPFL101 - Competing in Machine Translation](https://ufal.mff.cuni.cz/courses/npfl101).
 
 ## Usage
 1. Clone the repository in any Metacentrum frontend.
